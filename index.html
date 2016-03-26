@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Burrito Form</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <form action="https://httpbin.org/post" method="post">
+      <p>
+        <label for="customer">Customer name:</label><input type="text" name="customer" required />
+      </p>
+      <p>
+        <label for="phone">Phone number:</label><input type="text" name="phone" />
+      </p>
+      <fieldset>
+        <legend>Protein</legend>
+        <p>
+          <label>
+            <input type="radio" name="protein" value="Chicken" />
+            Chicken
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="radio" name="protein" value="Carnitas" />
+          Carnitas
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="radio" name="protein" value="Carne Asada" />
+          Carne Asada
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="radio" name="protein" value="Tofu" />
+            Tofu
+          </label>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Optional Ingredients</legend>
+        <p>
+          <label>
+            <input type="checkbox" name="optionals" value="Guac" />
+            Guac
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" name="optionals" value="Cilantro" />
+            Cilantro
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" name="optionals" value="Verde" />
+            Verde Salsa
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" name="optionals" value="Rojo" />
+            Rojo Salsa
+          </label>
+        </p>
+      </fieldset>
+      <button>Order Burrito</button>
+    </form>
+  </body>
+</html>
